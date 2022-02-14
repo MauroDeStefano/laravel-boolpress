@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
