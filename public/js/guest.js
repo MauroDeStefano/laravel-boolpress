@@ -2026,6 +2026,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PostDetail',
   data: function data() {
@@ -2174,6 +2177,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -3597,7 +3603,11 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v(_vm._s(_vm.post.title))]),
+    _vm._v(" "),
+    _c("p", [_vm._v(_vm._s(_vm.post.content))]),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -3768,9 +3778,21 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("article", [
     _c("div", { staticClass: "title-date" }, [
-      _c("h4", [
-        _c("a", { attrs: { href: "" } }, [_vm._v(_vm._s(_vm.post.title))]),
-      ]),
+      _c(
+        "h4",
+        [
+          _c(
+            "router-link",
+            {
+              attrs: {
+                to: { name: "detail", params: { slug: _vm.post.slug } },
+              },
+            },
+            [_vm._v("\n    " + _vm._s(_vm.post.title) + "\n    ")]
+          ),
+        ],
+        1
+      ),
       _vm._v(" "),
       _c("p", [_vm._v(_vm._s(_vm.setNewDate))]),
     ]),
@@ -19367,7 +19389,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\m-dos\Documents\Documenti personali\Boolean\LARAVEL\laravel-api\resources\js\guest.js */"./resources/js/guest.js");
+module.exports = __webpack_require__(/*! C:\Users\m-dos\Documents\Documenti personali\Boolean\LARAVEL\laravel-boolpress\resources\js\guest.js */"./resources/js/guest.js");
 
 
 /***/ })

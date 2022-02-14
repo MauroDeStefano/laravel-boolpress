@@ -1,7 +1,10 @@
 <template>
   <article>
     <div class="title-date">
-    <h4><a href="">{{post.title}}</a></h4>
+    <h4><router-link :to="{name: 'detail', params:{slug: post.slug}}">
+      {{post.title}}
+      </router-link>
+    </h4>
     <p>{{setNewDate}}</p>
     </div>
     <p class="content">{{post.content}}</p>
